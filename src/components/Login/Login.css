@@ -1,0 +1,36 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid rgb(2, 2, 31);
+  display: block;
+  padding: 25px;
+  font-size: 25px;
+  margin: 5px;
+}
+input[type='submit'] {
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: rgb(2, 2, 31);
+  margin-top: 25px;
+  color: white;
+}
+input:focus {
+  outline: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
