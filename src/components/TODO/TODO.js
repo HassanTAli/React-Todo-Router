@@ -9,15 +9,15 @@ export default class Todo extends React.Component {
         this.state = {
             items: [{
                 id: 1,
-                task: "Go TO ITI",
+                task: "Know Controlled and Uncontrolled Components",
                 done: false
             }, {
                 id: 2,
-                task: "Take js course",
+                task: "Learn React Router",
                 done: false
             }, {
                 id: 3,
-                task: "Go back home",
+                task: "Link All Components",
                 done: false
             }]
         }
@@ -44,10 +44,10 @@ export default class Todo extends React.Component {
     }
 
     render() {
-        return <div>
-            <ToDoList tasks={this.state.items} deleteItem={this.deleteItem} toggleDone={this.toggleDone} />
-            <AddItem addItem={this.addItem} />
-
-        </div>
+        return (
+            <div>
+                <ToDoList tasks={this.state.items} deleteItem={this.deleteItem} toggleDone={this.toggleDone} />
+                <AddItem addItem={this.addItem} />
+            </div>)
     }
 }

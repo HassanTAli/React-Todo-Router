@@ -1,4 +1,5 @@
 import React from "react";
+import './todo.css'
 
 export default class AddItem extends React.Component {
     constructor() {
@@ -20,9 +21,11 @@ export default class AddItem extends React.Component {
         this.props.addItem(item)
     }
     render() {
-        return <div>
-            Task :<input type="text" onChange={this.getValue} value={this.state.text} />
-            <button onClick={this.addTask}>Add</button>
-        </div>
+        return (
+            <div className="input-todo">
+                <h2>Enter Task</h2>
+                <input type="text" onChange={this.getValue} value={this.state.text} />
+                <button className="myButton add-btn" onClick={this.addTask}>Add</button>
+            </div>)
     }
 }

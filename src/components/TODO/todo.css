@@ -1,0 +1,62 @@
+/* ITEM TODO */
+.todo-item {
+  width: 50%;
+  border: 0.5px solid rgb(2, 2, 31);
+  padding: 10px;
+  margin: 25px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  color: white;
+  background-color: rgb(2, 2, 31);
+}
+.myButton {
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  font-family: Arial;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 16px 31px;
+  text-decoration: none;
+  border: none;
+  margin: 10px;
+}
+.green-btn {
+  background-color: #44c767;
+  color: #ffffff;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+.green-btn:hover {
+  background-color: #5cbf2a;
+}
+.red-btn {
+  background-color: #f44336;
+  color: #ffffff;
+}
+.red-btn:hover {
+  background-color: red;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+/* input To-do */
+.input-todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.input-todo input {
+  margin: 1px;
+  width: 60%;
+}
+.add-btn {
+  background-color: rgb(2, 2, 31);
+  color: white;
+}
